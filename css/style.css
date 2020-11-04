@@ -1,0 +1,317 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+
+:root{
+    --first-color: #0278ae;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Lato",sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/*Navbar start*/
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: #333;
+}
+
+h1,h2{
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 10px 0;
+}
+
+p{
+    margin: 10px 0;
+}
+
+img{
+    width: 100%;
+}
+
+.navbar{
+    background-color:var(--first-color);
+    color: #fff;
+    height: 80px;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar a{
+    padding: 0 8px;
+    color: #fff;
+    margin: 0 5px;
+}
+
+.navbar a:hover{
+    border-bottom: 2px solid #fff;
+}
+
+.navbar .flex{
+    justify-content: space-around;
+}
+
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0 40px;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+
+
+/*Navbar End*/
+
+/*Showcase Start*/
+.showcase{
+    height: 400px;
+    background-color: var(--first-color);
+    color: #fff;
+    position: relative;
+}
+.showcase .grid{
+    grid-template-columns: 55% 45%;
+    gap: 30px;
+    overflow: visible;
+}
+.showcase h2{
+    font-size: 25px;
+}
+.showcase p,a{
+    margin: 15px 25px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.card{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    color: black;
+    box-shadow: 3px 3px 5px black;
+}
+
+.showcase-form{
+    position: relative;
+    top: 80px;
+    height: 320px;
+    width: 400px;
+    padding: 20px;
+    z-index: 100;
+}
+
+.form-control{
+    margin: 20px 0;
+}
+
+.form-control input[type="text"],
+.form-control input[type="email"]{
+    padding: 5px;
+    border: none;
+    text-transform: capitalize;
+    border-bottom: 1px solid black;
+    width: 100%;
+    padding: 5px;
+    font-size: 1rem;
+}
+
+.form-control input:focus{
+    outline: none;
+}
+
+.btn{
+    padding: 7px 15px;
+    font-size: 1rem;
+    border-radius: 5px;
+    background-color: var(--first-color);
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn-read{
+    background-color:transparent;
+    border: 1px solid #fff;
+}
+.btn:hover{
+   transform: scale(0.94);
+}
+.showcase::before,
+.showcase::after{
+    content: " ";
+    position: absolute;
+    height: 100px;
+    bottom: -80px;
+    right: 0;
+    left: 0;
+    background-color: white;
+    transform: skewY(-4deg);
+   -webkit-transform: skewY(-4deg);
+   -moz-transform: skewY(-4deg);
+   -ms-transform: skewY(-4deg);
+
+}
+
+/*Showcase Start*/
+
+/* Section for service Icons start*/
+
+.icons{
+    padding-top: 110px ;
+}
+.grid-2{
+    grid-template-columns: repeat(4,1fr);
+}
+
+.text-center{
+    text-align: center;
+    
+}
+
+.my-1{
+    font-size: 20px;
+    padding: 30px 0;
+}
+.my-4{
+    font-size: 25px ;
+    color:var(--first-color);
+}
+.text-1{
+    font-weight: bold;
+    font-size: 22px;
+    padding-bottom: 20px;
+    color: black;
+}
+.icons .grid h3{
+    font-size: 28px;
+}
+/*Commandline start*/
+.commandline{
+    margin: 40px 0;
+}
+img{
+    border-radius: 7px;
+}
+.commandline .grid{
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+}
+
+.commandline .grid> *:first-child{
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+}
+/*Commandline end*/
+
+/*network start*/
+.network{
+    margin: 50px 0 0 0;
+    background-color: #046fdb;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    color: white;
+    
+}
+.text-left{
+    text-align: left;
+    margin-bottom: 30px;
+}
+.network h2{
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.network a{
+    margin-left: 0;
+}
+.network p{
+    font-size: 18px;
+}
+.btn-dark{
+    background-color: white;
+    color: black;
+}
+
+/*network end*/
+
+/* Course start */
+.course h4{
+    padding-bottom: 10px;
+    font-size: 18px;
+}
+.course-heading{
+    margin: 1.5rem 0;
+}
+.course .card{
+    height: 150px;
+    width: 100px;
+    margin: 18px 10px 40px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.5s ease-in;
+}
+.course .card:hover{
+ transform: translateY(10px);
+}
+.course .flex{
+    flex-wrap: wrap;
+}
+
+
+/* Course End */
+/*footer section start*/
+.last-section{
+    background-color: black;
+}
+.grid-3{
+    grid-template-columns: repeat(3,1fr);
+}
+.footer-part{
+    color:white;
+}
+.fa-facebook{
+    color: #4267B2;
+    font-size: 30px;
+}
+.fa-github{
+    color: #F4CBB2;
+    font-size: 30px;
+}
+.fa-twitter{
+    color:#1DA1F2;
+    font-size: 30px;
+}
+
+.my-5{
+    margin: 40px 0 10px 0;
+}
+/*footer section end*/
